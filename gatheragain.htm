@@ -46,7 +46,7 @@ body, html {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  z-index: 10; /* Navbar appears on top of everythign else */
+  z-index: 9; /* Navbar appears on top of everythign else */
 
 }
 .gnavbar a {
@@ -55,20 +55,37 @@ body, html {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
+
 /* Change background on mouse-over */
 .gnavbar a:hover {
   background: #6cc54a; /*FBC Green*/
   color: #fff;
 }
 
+.gnavbar img {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.gnavbar img:hover {
+  background: #6cc54a; /*FBC Green*/
+}
+
+
 /* The hero image */
 .hero-image {
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./staffportal_files/online-header-darker.png");
+  background-image: url("http://www.fellowshiponline.com/staffportal_files/online-header-darker.png");
 
   /* Set a specific height */
-  height: 25%;
+  height: 18%;
 
   /* Position and center the image to scale nicely on all screens */
 	background-attachment: fixed;
@@ -78,6 +95,7 @@ body, html {
   position: relative;
   margin-top: 51px;
 }
+
 
 /* Main content */
 
@@ -169,10 +187,11 @@ body, html {
 <!-- Navbar -->
 
 <div class="gnavbar">
-
+   <img src="http://www.fellowshiponline.com/staffportal_files/FellowShip_Logos_Landscape_White_RGB.png">
    <a href="http://www.fellowshiponline.com">Home</a>
    <a href="http://www.fellowshiponline.com/about">About</a>
    <a href="http://www.fellowshiponline.com/give">Give</a>
+
 
 </div>
 
@@ -189,14 +208,16 @@ body, html {
 <div class="w3-container w3-left">
  <h2>Welcome Back!</h2>
 
- <p style="font-size:20px;">This form allows us to count people planning to attend our worship services. It'll help us know how to set up our rooms and prepare to gather again as a church while under the threat of COVID-19.</p>
+ <p style="font-size:20px;">TPlease take a moment and let us know what worship service you and your family will be attending. With limited seating capacity due to COVID-19, you signing up helps us best prepare seating for our worship services.</p>
  <p><h3>A few things to note</h3></p>
 <ul class="a">
-  <li>Fellowship Kids is closed this week. Please read and consider the CDC guidelines on young children in large gatherings.</li>
-  <li>We will seat each family separately as they arrive in observation of the State's social distancing guidelines.</li>
-  <li>We encourage everyone to wear a face mask while in the building.</li>
+  <li>If you have a fever, cough, shortness of breath, any symptoms of COVID-19 or have recently been exposed to someone with COVID-19, please stay home and join us <a href="https://fellowshiponline.churchonline.org">online</a>.</li>
+  <li>Fellowship kids is closed.</a></li>
+  <li>We encourage you to wear a mask while in the building.</li>
+  <li>We will seat each individual or family as they arrive using proper social distance guidelines.</li>
+  <li>If you are in a high-risk group for COVID-19, please stay home and join us <a href="https://fellowshiponline.churchonline.org">online</a>.</li>
 </ul>
-  <p>Church service will certainly look different for the next few weeks. We're delighted to gather together to celebrate the good news of our salvation by grace, through faith in Christ, for the glory of God, together again!</p>
+  <p>We are excited about you joining us for worship services! We can't wait to watch God make more disciples at home and across the world as we get back together again to worship Him and bring Him glory.</p>
 </div>
 </div>
 <div id="content">
