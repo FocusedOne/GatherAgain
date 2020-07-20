@@ -88,18 +88,17 @@ _________________
       <div class="w3-half w3-section w3-row-padding">
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">Open Modal</button>
             <p></p>
-            <a href="https://www.google.com" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yo'Self</b></a>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
             <p></p>
           </div>
         </div>
       </div>
-      <div class="w3-half w3-section">
+      <div class="w3-half w3-section w3-row-padding">
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
-            <a href="https://www.google.com" target="_blank" rel="noopener" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yo'Kids</b></a>
+            <button onclick="document.getElementBytId('id02').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
             <p></p>
           </div>
         </div>
@@ -109,16 +108,68 @@ _________________
 		</div>
 
 
-<!-- The Modal -->
+<!-- FSK Modal - This allows the user to select which campus they're registering for FSK-->
 <div id="id01" class="w3-modal">
-  <div class="w3-modal-content" style="max-width:600px">
-    <div class="w3-container">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container g-theme-lightblue">
       <span onclick="document.getElementById('id01').style.display='none'"
-      class="w3-button w3-display-topright">&times;</span>
+      class="w3-button w3-display-topright w3-xlarge w3-padding">&times;</span>
+      <h2>FSK Registration</h2>
+    </header>
+    <div class="w3-bar w3-border-bottom w3-padding-bottom">
+      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'WLR')">WLR</button>
+      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Benton')">Benton</button>
+      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Cabot')">Cabot</button>
+      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Midtown')">Midtown</button>
+    </div>
 
-      <iframe src="https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402&template=barebones&remembertemplate=true" width="100%" height="600px"</iframe>
+<!-- Modal Content - This is where the links and description are built for each campus -->
+    <div id="WLR" class="w3-container Campus">
+      <h1>West Little Rock</h1>
+      <p>Please select either the 9am or 11am service</p>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <p></p>
+    </div>
+
+    <div id="Benton" class="w3-container Campus">
+      <h1>Benton</h1>
+      <p>Please select either the 9am or 11am service</p>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <p></p>
+    </div>
+
+    <div id="Cabot" class="w3-container Campus">
+      <h1>Cabot</h1>
+      <p>Please select either the 9am or 11am service</p>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <p></p>
+    </div>
+
+    <div id="Midtown" class="w3-container Campus">
+      <h1>Midtown</h1>
+      <p>Click below to register for FSK</p>
+      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>5 PM</b></a>
+      <p></p>
+    </div>
+
+      <!-- <iframe src="https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402&template=barebones&remembertemplate=true" width="800px" height="1200px"</iframe> -->
     </div>
   </div>
+
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container g-theme-lightblue">
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>Adult Registration</h2>
+    </header>
+    <div class="w3-container">
+      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522"></iframe>
+    </div>
+</div>
 </div>
 
 
@@ -163,6 +214,24 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+</script>
+
+<script>
+document.getElementsByClassName("tablink")[0].click();
+
+function openCampus(evt, campusName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("Campus");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(campusName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
 }
 </script>
 
