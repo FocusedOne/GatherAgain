@@ -98,7 +98,8 @@ _________________
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
-            <button onclick="document.getElementBytId('AdultModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
+
+            <button onclick="document.getElementById('AdultModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
             <p></p>
           </div>
         </div>
@@ -113,12 +114,11 @@ _________________
   <div class="w3-modal-content w3-card-4">
     <header class="w3-container g-theme-lightblue">
       <span onclick="document.getElementById('AdultModal').style.display='none'"
-      class="w3-button w3-display-topright">&times;</span>
+      class="w3-button w3-display-topright w3-xlarge">&times;</span>
       <h2>Adult Registration</h2>
     </header>
     <div class="w3-bar w3-border-bottom">
-      <a href="https://www.sdf.org" class="w3-button w3-light-green w3-mobile w3-text-white">SDF</a>
-      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522"></iframe>
+      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522" width="100%" height="600px"></iframe>
     </div>
   </div>
 </div>
@@ -140,7 +140,7 @@ _________________
       </div>
 
 
-<!-- Modal Content - This is where the links and description are built for each campus -->
+<!-- FSK Modal Content - This is where the links and description are built for each campus -->
     <div id="WLR" class="w3-container Campus">
       <h1>West Little Rock</h1>
       <p>Please select either the 9am or 11am service</p>
