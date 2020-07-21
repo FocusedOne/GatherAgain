@@ -89,7 +89,7 @@ _________________
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
+            <button onclick="document.getElementById('FSKModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
             <p></p>
           </div>
         </div>
@@ -98,7 +98,7 @@ _________________
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
-            <button onclick="document.getElementBytId('id02').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
+            <button onclick="document.getElementBytId('AdultModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
             <p></p>
           </div>
         </div>
@@ -107,21 +107,38 @@ _________________
 
 		</div>
 
+<!-- Adult Registration modal -->
 
-<!-- FSK Modal - This allows the user to select which campus they're registering for FSK-->
-<div id="id01" class="w3-modal">
+<div id="AdultModal" class="w3-modal">
   <div class="w3-modal-content w3-card-4">
     <header class="w3-container g-theme-lightblue">
-      <span onclick="document.getElementById('id01').style.display='none'"
-      class="w3-button w3-display-topright w3-xlarge w3-padding">&times;</span>
+      <span onclick="document.getElementById('AdultModal').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2>Adult Registration</h2>
+    </header>
+    <div class="w3-bar w3-border-bottom">
+      <a href="https://www.sdf.org" class="w3-button w3-light-green w3-mobile w3-text-white">SDF</a>
+      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522"></iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- FSK Modal - This allows the user to select which campus they're registering for FSK-->
+<div id="FSKModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container g-theme-lightblue">
+      <span onclick="document.getElementById('FSKModal').style.display='none'"
+      class="w3-button w3-display-topright w3-xlarge">&times;</span>
       <h2>FSK Registration</h2>
     </header>
-    <div class="w3-bar w3-border-bottom w3-padding-bottom">
-      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'WLR')">WLR</button>
-      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Benton')">Benton</button>
-      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Cabot')">Cabot</button>
-      <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Midtown')">Midtown</button>
-    </div>
+      <div class="w3-bar w3-border-bottom w3-padding-bottom">
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'WLR')">WLR</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Benton')">Benton</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Cabot')">Cabot</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Midtown')">Midtown</button>
+      </div>
+
 
 <!-- Modal Content - This is where the links and description are built for each campus -->
     <div id="WLR" class="w3-container Campus">
@@ -159,17 +176,7 @@ _________________
     </div>
   </div>
 
-<div id="id02" class="w3-modal">
-  <div class="w3-modal-content w3-card-4">
-    <header class="w3-container g-theme-lightblue">
-      <span onclick="document.getElementById('id02').style.display='none'"
-      class="w3-button w3-display-topright">&times;</span>
-      <h2>Adult Registration</h2>
-    </header>
-    <div class="w3-container">
-      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522"></iframe>
-    </div>
-</div>
+
 </div>
 
 
