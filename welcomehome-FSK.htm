@@ -37,6 +37,8 @@ _________________
 }
 </style>
 
+
+
 </head>
 
 
@@ -83,19 +85,26 @@ _________________
 </div>
 </div>
 <div id="content">
-  <div class="w3-container">
+  <div class="w3-container w3-display-container">
 		<div class="w3-container w3-padding-32 w3-theme-d1">
-      <div class="w3-half w3-section w3-row-padding">
+      <!-- blank card to center single button on page.  Remove for two cards with adult registration -->
+      <div class="w3-third w3-section w3-row-padding">
+        <div class="w3-card">
+        </div>
+      </div>
+      <!--FSK Registration Card -->
+      <div class="w3-third w3-section w3-row-padding">
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
-            <a <img src="http://www.fellowshiponline.com/staffportal_files/register.jpg" style="width:50%">
+            <a onclick="document.getElementById('FSKModal').style.display='block'"><img src="http://www.fellowshiponline.com/staffportal_files/register.jpg" style="width:50%"> </a>
             <p></p>
             <button onclick="document.getElementById('FSKModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
             <p></p>
           </div>
         </div>
       </div>
+      <!-- REMOVE THIS COMMENT TO ENABLE ADULT REGISTRATION
       <div class="w3-half w3-section w3-row-padding">
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
@@ -107,6 +116,7 @@ _________________
         </div>
       </div>
     </div>
+    -->
 
 		</div>
 
@@ -146,23 +156,23 @@ _________________
     <div id="WLR" class="w3-container Campus">
       <h1>West Little Rock</h1>
       <p>Please select either the 9am or 11am service</p>
-      <a id="west9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="wlr9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
       <a id="wlr11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
       <p></p>
     </div>
 
     <div id="Benton" class="w3-container Campus">
       <h1>Benton</h1>
-      <p>Please select either the 9am or 11am service</p>
-      <a id="benton9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
-      <a id="benton11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>11 AM</b></a>
+      <p>Click below to register for FSK</p>
+      <!-- <a id="benton9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a> -->
+      <a id="benton11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
       <p></p>
     </div>
 
     <div id="Cabot" class="w3-container Campus">
       <h1>Cabot</h1>
       <p>Click below to register for FSK</p>
-      <a id="cabot9am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="cabot9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>9 AM</b></a>
       <!-- <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a> -->
       <p></p>
     </div>
@@ -170,12 +180,13 @@ _________________
     <div id="Midtown" class="w3-container Campus">
       <h1>Midtown</h1>
       <p>Click below to register for FSK</p>
-      <a id="midtown5pm" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>5 PM</b></a>
+      <a id="mid5pm" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>5pm</b></a>
       <p></p>
     </div>
 
       <!-- <iframe src="https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402&template=barebones&remembertemplate=true" width="800px" height="1200px"</iframe> -->
     </div>
+
   </div>
 
 
@@ -183,7 +194,7 @@ _________________
 
 
 
-
+</body>
 
 
 <!-- Footer at bottom -->
@@ -191,6 +202,8 @@ _________________
 <footer class="w3-center w3-padding-16 w3-theme-blue">
   <p> <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=ESV" class="w3-hover-text-white">1 Corinthians 15</a></p>
 </footer>
+
+
 
 <!-- Google Analytics tracking script -->
 
@@ -247,22 +260,22 @@ function openCampus(evt, campusName) {
 <script>
 
 // West Little Rock registration links
-  var link = document.getElementById('west9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64353"
-  var link = document.getElementById('wlr11am');
-  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64359"
+  var wlr9am = document.getElementById('wlr9am');
+  wlr9am.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64353"
+  var wlr11am = document.getElementById('wlr11am');
+  wlr11am.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64359"
 
 // Benton Registration Links
-  var link = document.getElementById('benton9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64425"
-  var link = document.getElementById('benton11am');
-  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64426"
+  //var benton9am = document.getElementById('benton9am');
+  //benton9am.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64425"
+  var benton11am = document.getElementById('benton11am');
+  benton11am.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64426"
 
 //Cabot registration links
   var link = document.getElementById('cabot9am');
   link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64436"
-  var link = document.getElementById('cabot11am');
-  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402"
+  //var link = document.getElementById('cabot11am');
+  //link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402"
 
 //Midtown registration link
   var link = document.getElementById('mid5pm');
@@ -271,5 +284,5 @@ function openCampus(evt, campusName) {
 </script>
 
 
-</body>
+
 </html>
