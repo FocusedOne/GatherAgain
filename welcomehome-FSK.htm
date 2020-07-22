@@ -89,6 +89,8 @@ _________________
         <div class="w3-card w3-hover-shadow">
           <div class="w3-container w3-white w3-center">
             <p></p>
+            <a <img src="http://www.fellowshiponline.com/staffportal_files/register.jpg" style="width:50%">
+            <p></p>
             <button onclick="document.getElementById('FSKModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
             <p></p>
           </div>
@@ -144,8 +146,8 @@ _________________
     <div id="WLR" class="w3-container Campus">
       <h1>West Little Rock</h1>
       <p>Please select either the 9am or 11am service</p>
-      <a id="wlr9am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
-      <a id="wlr11am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
+      <a id="west9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="wlr11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
       <p></p>
     </div>
 
@@ -168,7 +170,7 @@ _________________
     <div id="Midtown" class="w3-container Campus">
       <h1>Midtown</h1>
       <p>Click below to register for FSK</p>
-      <a id="midtown" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>5 PM</b></a>
+      <a id="midtown5pm" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>5 PM</b></a>
       <p></p>
     </div>
 
@@ -243,22 +245,24 @@ function openCampus(evt, campusName) {
 </script>
 
 <script>
-  var link = document.getElementById('benton9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
-  var link = document.getElementById('benton11am');
-  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64426"
-  var link = document.getElementById('cabot9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64436"
-  var link = document.getElementById('cabot11am');
-  link.href= "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402"
-  var link = document.getElementById('wlr9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353"
+
+  var link = document.getElementById('west9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64353"
   var link = document.getElementById('wlr11am');
-  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359"
+  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64359"
+
   var link = document.getElementById('benton9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
-  var link = document.getElementById('mid5pm');
-  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64433"
+  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64425"
+  var link = document.getElementById('benton11am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64426"
+
+  var link = document.getElementById('cabot9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64436"
+  var link = document.getElementById('cabot11am');
+  link.href = "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402"
+
+  var link = document.getElementById('midtown5pm');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64433"
 
 </script>
 
