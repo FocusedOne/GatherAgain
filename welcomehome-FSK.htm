@@ -144,31 +144,31 @@ _________________
     <div id="WLR" class="w3-container Campus">
       <h1>West Little Rock</h1>
       <p>Please select either the 9am or 11am service</p>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <a id="wlr9am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="wlr11am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
       <p></p>
     </div>
 
     <div id="Benton" class="w3-container Campus">
       <h1>Benton</h1>
       <p>Please select either the 9am or 11am service</p>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <a id="benton9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="benton11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>11 AM</b></a>
       <p></p>
     </div>
 
     <div id="Cabot" class="w3-container Campus">
       <h1>Cabot</h1>
-      <p>Please select either the 9am or 11am service</p>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>9 AM</b></a>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a>
+      <p>Click below to register for FSK</p>
+      <a id="cabot9am" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a>
+      <!-- <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>11 AM</b></a> -->
       <p></p>
     </div>
 
     <div id="Midtown" class="w3-container Campus">
       <h1>Midtown</h1>
       <p>Click below to register for FSK</p>
-      <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white"><b>5 PM</b></a>
+      <a id="midtown" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>5 PM</b></a>
       <p></p>
     </div>
 
@@ -240,6 +240,26 @@ function openCampus(evt, campusName) {
   document.getElementById(campusName).style.display = "block";
   evt.currentTarget.classList.add("w3-light-grey");
 }
+</script>
+
+<script>
+  var link = document.getElementById('benton9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
+  var link = document.getElementById('benton11am');
+  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64426"
+  var link = document.getElementById('cabot9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64436"
+  var link = document.getElementById('cabot11am');
+  link.href= "https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402"
+  var link = document.getElementById('wlr9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64353"
+  var link = document.getElementById('wlr11am');
+  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359"
+  var link = document.getElementById('benton9am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
+  var link = document.getElementById('mid5pm');
+  link.href= "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64433"
+
 </script>
 
 
