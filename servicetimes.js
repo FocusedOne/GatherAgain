@@ -1,3 +1,9 @@
+/*
+Links in this file change where the buttons link to in the FSK Modal on the welcome home page.
+To add Benton 9am or Cabot 11am service times back in, uncomment the var and href lines.
+NOTE - JS hangs if there's an unused variable when loading the htm page.
+Only uncomment a line here if the corresponding button is uncommented on the html
+*/
 
 
 // West Little Rock registration links
