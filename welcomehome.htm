@@ -25,7 +25,7 @@ _________________
 <link rel="mask-icon" href="http://www.fellowshiponline.com/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="shortcut icon" href="http://www.fellowshiponline.com/favicon.ico">
 
-<script src="http://www.fellowshiponline.com/staffportal_files/servicetimes.js">
+<script src="http://www.fellowshiponline.com/staffportal_files/servicetimes.js"></script>
 
 <style>
 .storyteamvideo {
@@ -38,6 +38,8 @@ _________________
 
 }
 </style>
+
+
 
 </head>
 
@@ -59,42 +61,164 @@ _________________
 
 <div class="hero-image">
 	<div class="hero-text">
-		<h1 style="font-size:6vw">Welcome Home!</h1>
+		<h1 style="font-size:6vw">FSK is Open!</h1>
 	</div>
 </div>
 
+<!-- Video Element -->
+
 <video class='storyteamvideo' controls>
-    <source type="video/mp4" src="https://player.vimeo.com/external/420766617.hd.mp4?s=757a278eaef05888255cf1d2861d54ec0a81cee7&profile_id=175">
+    <source type="video/mp4" src="https://fbclr.blob.core.windows.net/video/FSKReOpeningLowRes.mp4" type="video/mp4">
+      Your browser does not support the HTML video tag.
 </video>
+
+<!-- Text area -->
+
 
 <div class=greeting-top>
 
-<div class="w3-container w3-left">
+<!-- <div class="w3-container w3-left"> -->
  <h2>Welcome Back!</h2>
 
- <p style="font-size:20px;">Please take a moment and let us know what worship service you and your family will be attending. With limited seating capacity due to COVID-19, you signing up helps us best prepare seating for our worship services.</p>
- <p><h3>A few things to note</h3></p>
-<ul class="a">
-  <li>If you have a fever, cough, shortness of breath, any symptoms of COVID-19 or have recently been exposed to someone with COVID-19, please stay home and join us <a href="https://fellowshiponline.churchonline.org">online</a>.</li>
-  <li>Fellowship Kids will not meet until further notice.</a></li>
+ <p>Fellowship Kids is excited to reopen with a limited experience for all ages on all campuses. In addition to our normal safety procedures, we are taking extra steps to provide a safe and clean environment where kids can learn about Jesus! </p>
+ <p><h3>A few thigns to note:</h3></p>
+<ul>
+  <li>If you have a fever, cough, shortness of breath, any symptoms of COVID-19 or have recently been exposed to someone with COVID-19, please stay home and join us <a href="https://fellowshipar.online.church"><b>online</b></a>.</li>
+  <li>We strongly encourage parents and kids to wear a mask while in the building.</li>
   <li>We strongly encourage you to wear a mask while in the building.</li>
-  <li>We will seat each individual or family as they arrive using proper social distance guidelines.</li>
-  <li>If you are in a high-risk group for COVID-19, please stay home and join us <a href="https://fellowshiponline.churchonline.org">online</a>.</li>
+  <li>Online kids service will be available through the Fellowship Kids YouTube channel. You can subscribe to the channel at <a href="https://www.youtube.com/FellowshipKidsAR"><b>YouTube</b></a>.</li>
 </ul>
-  <p>We are excited about you joining us for worship services! We can't wait to watch God make more disciples at home and across the world as we get back together again to worship Him and bring Him glory.</p>
+  <p>To register your kids, click the link below to find the service times and classroom options available for each campus.</p>
+<!-- </div> -->
 </div>
-</div>
-<div id="content">
 
+<!-- registration buttons / cards.  Currently configured for thirds. -->
+
+<div id="content">
+  <div class="w3-container w3-display-container">
 		<div class="w3-container w3-padding-32 w3-theme-d1">
-      <iframe id="PASTORSTOOLBOX" src="https://pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522" hspace="0" vspace="0" padding="0" border="0" style="border: 0;width:100%;overflow:0;height:70vh;" frameborder="0" allowfullscreen="true" onload="window.iFrameResize()" allowtransparency="true" scrolling="no"></iframe><script src="https://cdn.pastorstoolbox.com/iframe.js" async></script>
+      <!-- blank card to center single button on page.  Remove for two cards with adult registration -->
+      <div class="w3-third w3-section w3-row-padding">
+        <div class="w3-card">
+        </div>
+      </div>
+
+      <!--FSK Registration Card -->
+
+      <div class="w3-third w3-section w3-row-padding">
+        <div class="w3-card w3-hover-shadow">
+          <div class="w3-container w3-white w3-center">
+            <p></p>
+            <a onclick="document.getElementById('FSKModal').style.display='block'"><img src="http://www.fellowshiponline.com/staffportal_files/register.jpg" style="width:65%"> </a>
+            <p></p>
+            <button onclick="document.getElementById('FSKModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Your Kids</b></button>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Remove this comment to enable adult registration card
+
+      <div class="w3-third w3-section w3-row-padding">
+        <div class="w3-card w3-hover-shadow">
+          <div class="w3-container w3-white w3-center">
+            <p></p>
+            <a onclick="document.getElementById('FSKModal').style.display='block'"><img src="http://www.fellowshiponline.com/staffportal_files/register.jpg" style="width:50%"> </a>
+            <p></p>
+            <button onclick="document.getElementById('AdultModal').style.display='block'" class="w3-button w3-light-green w3-mobile w3-text-white"><b>Register Yourself</b></button>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    -->
+
     </div>
 
+
 		</div>
+</div>
+
+<!-- Adult Registration modal -->
+
+<div id="AdultModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container g-theme-lightblue">
+      <span onclick="document.getElementById('AdultModal').style.display='none'"
+      class="w3-button w3-display-topright w3-xlarge">&times;</span>
+      <h2>Adult Registration</h2>
+    </header>
+    <div class="w3-bar w3-border-bottom">
+      <iframe src="https://www.pastorstoolbox.com/save-a-seat/cf900e70-d54d-477d-a4ea-77b76fbf1522" width="100%" height="600px"></iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- FSK Modal - This allows the user to select which campus they're registering for FSK-->
+<div id="FSKModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container g-theme-lightblue">
+      <span onclick="document.getElementById('FSKModal').style.display='none'"
+      class="w3-button w3-display-topright w3-xlarge">&times;</span>
+      <h2>FSK Registration</h2>
+    </header>
+      <div class="w3-bar w3-border-bottom w3-padding-bottom">
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'WLR')">WLR</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Benton')">Benton</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Cabot')">Cabot</button>
+        <button class="tablink w3-bar-item w3-button" onclick="openCampus(event, 'Midtown')">Midtown</button>
+      </div>
+
+
+<!-- FSK Modal Content - This is where the links and description are built for each campus -->
+    <div id="WLR" class="w3-container Campus">
+      <h1>West Little Rock</h1>
+      <p>Please select either the 9am or 11am service</p>
+      <p>Read our FAQ for more information</p>
+      <a id="wlr9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white" target="_blank"><b>9 AM</b></a>
+      <a id="wlr11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white" target="-_blank"><b>11 AM</b></a>
+      <a href="https://fbclr.blob.core.windows.net/webdocs/FellowshipKidsReopenFAQ_WLR.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>FAQ</b></a>
+      <p></p>
+    </div>
+
+    <div id="Benton" class="w3-container Campus">
+      <h1>Benton</h1>
+      <p>Click below to register for FSK</p>
+      <p>Read our FAQ for more information</p>
+      <!-- <a id="benton9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="_blank"><b>9 AM</b></a> -->
+      <a id="benton11am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>11 AM</b></a>
+      <a href="https://fbclr.blob.core.windows.net/webdocs/FellowshipKidsReopenFAQ_BEN.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>FAQ</b></a>
+      <p></p>
+    </div>
+
+    <div id="Cabot" class="w3-container Campus">
+      <h1>Cabot</h1>
+      <p>Click below to register for FSK</p>
+      <p>Read our FAQ for more information</p>
+      <a id="cabot9am" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>9 AM</b></a>
+      <!-- <a href="https://my.fellowshiponline.com/portal/event_detail.aspx?id=64359&template=barebones&remembertemplate=true" class="w3-button w3-light-green w3-mobile w3-text-white"><b>11 AM</b></a> -->
+      <a href="https://fbclr.blob.core.windows.net/webdocs/FellowshipKidsReopenFAQ_CAB.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>FAQ</b></a>
+      <p></p>
+    </div>
+
+    <div id="Midtown" class="w3-container Campus">
+      <h1>Midtown</h1>
+      <p>Click below to register for FSK</p>
+      <p>Read our FAQ for more information</p>
+      <a id="mid5pm" href="" class="w3-button w3-light-green w3-mobile w3-text-white w3-text-white" target="-_blank"><b>5pm</b></a>
+      <a href="https://fbclr.blob.core.windows.net/webdocs/FellowshipKidsReopenFAQ_MID.pdf" class="w3-button w3-light-green w3-mobile w3-text-white"><b>FAQ</b></a>
+      <p></p>
+    </div>
+
+      <!-- <iframe src="https://my.fellowshiponline.com/portal/event_signup.aspx?id=64402&template=barebones&remembertemplate=true" width="800px" height="1200px"</iframe> -->
+    </div>
+
+  </div>
 
 
 
 
+</body>
 
 
 <!-- Footer at bottom -->
@@ -102,6 +226,8 @@ _________________
 <footer class="w3-center w3-padding-16 w3-theme-blue">
   <p> <a href="https://www.biblegateway.com/passage/?search=1+Corinthians+15&version=ESV" class="w3-hover-text-white">1 Corinthians 15</a></p>
 </footer>
+
+
 
 <!-- Google Analytics tracking script -->
 
@@ -116,7 +242,7 @@ _________________
 
 <!-- Sticky Navbar Script -->
 
-<!-- <script>
+<script>
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -136,7 +262,26 @@ function myFunction() {
   }
 }
 </script>
--->
 
-</body>
+<script>
+document.getElementsByClassName("tablink")[0].click();
+
+function openCampus(evt, campusName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("Campus");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(campusName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+</script>
+
+<script src="http://www.fellowshiponline.com/staffportal_files/servicetimes.js"></script>
+
+
 </html>
