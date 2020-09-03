@@ -13,7 +13,7 @@ Only uncomment a line here if the corresponding button is uncommented on the htm
   wlr11am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66050"
 
 
-// Benton Registration Links
+// Benton registration links
   //var benton9am = document.getElementById('benton9am');
   //benton9am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
   var benton11am = document.getElementById('benton11am');
