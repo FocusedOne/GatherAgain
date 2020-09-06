@@ -22,8 +22,8 @@ Only uncomment a line here if the corresponding button is uncommented on the htm
 //Cabot registration links
   var link = document.getElementById('cabot9am');
   link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66053"
-  //var link = document.getElementById('cabot11am');
-  //link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64402"
+  var link = document.getElementById('cabot11am');
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66063"
 
 //Midtown registration link
   var link = document.getElementById('mid5pm');
