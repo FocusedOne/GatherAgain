@@ -8,23 +8,23 @@ Only uncomment a line here if the corresponding button is uncommented on the htm
 
 // West Little Rock registration links
   var wlr9am = document.getElementById('wlr9am');
-  wlr9am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66080"
+  wlr9am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66619"
   var wlr11am = document.getElementById('wlr11am');
-  wlr11am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66081"
+  wlr11am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66620"
 
 
 // Benton registration links
-  //var benton9am = document.getElementById('benton9am');
-  //benton9am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=64425"
+  var benton9am = document.getElementById('benton9am');
+  benton9am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66601"
   var benton11am = document.getElementById('benton11am');
-  benton11am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66076"
+  benton11am.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66340"
 
 //Cabot registration links
   var link = document.getElementById('cabot9am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66077"
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66616"
   var link = document.getElementById('cabot11am');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66078"
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66617"
 
 //Midtown registration link
   var link = document.getElementById('mid5pm');
-  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66079"
+  link.href = "https://my.fellowshiponline.com/portal/event_detail.aspx?id=66618"
