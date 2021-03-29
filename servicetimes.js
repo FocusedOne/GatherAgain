@@ -8,23 +8,31 @@ Only uncomment a line here if the corresponding button is uncommented on the htm
 
 // West Little Rock registration links
   var wlr9am = document.getElementById('wlr9am');
-  wlr9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68375"
+  wlr9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68734"
   var wlr11am = document.getElementById('wlr11am');
-  wlr11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68376"
+  wlr11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68736"
 
 
 // Benton registration links
+  var benton6pm = document.getElementById('benton6pm');
+  benton6pm.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68712"
   var benton9am = document.getElementById('benton9am');
-  benton9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68365"
+  benton9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68714"
   var benton11am = document.getElementById('benton11am');
-  benton11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68366"
+  benton11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68716"
 
 //Cabot registration links
+  var link = document.getElementById('cabot6pm');
+  cabot6pm.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68699"
   var link = document.getElementById('cabot9am');
-  link.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68369"
+  cabot830am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68701"
+  var link = document.getElementById('cabot9am');
+  cabot9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68703"
   var link = document.getElementById('cabot11am');
-  link.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68370"
+  cabot11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68738"
 
 //Midtown registration link
   var link = document.getElementById('mid5pm');
-  link.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68372"
+  mid11am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68417"
+  var link = document.getElementById('mid5pm');
+  mid5pm.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68740"
