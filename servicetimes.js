@@ -25,7 +25,7 @@ Only uncomment a line here if the corresponding button is uncommented on the htm
   var link = document.getElementById('cabot6pm');
   cabot6pm.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68699"
   var link = document.getElementById('cabot9am');
-  cabot830am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68701"
+  cabot8am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68701"
   var link = document.getElementById('cabot9am');
   cabot9am.href = "https://my.fellowshipar.com/portal/event_detail.aspx?id=68703"
   var link = document.getElementById('cabot11am');
